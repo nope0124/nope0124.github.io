@@ -9,7 +9,6 @@
   </head>
   <body>
     <script>
-      // Global site tag (gtag.js) - Google Analytics
       const glot = new Glottologist();
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
@@ -17,7 +16,6 @@
       gtag('config', 'UA-136500666-1');
       let lang = "ja"
       
-      // Animations
       $(document).ready(function(){
         $('a[href^="#"]').click(function() {
           var speed = 400;
@@ -28,6 +26,7 @@
           return false;
         });
       });
+
       $(function() {
         $('#modal-open').click(function() {
           // console.log('clicked');
@@ -56,7 +55,6 @@
           glot.render(lang);
         });
       });
-      // Translate
       glot.import("res/index_lang.json").then(() => {
         glot.render(lang);
       });
@@ -129,6 +127,11 @@
               <div align = "center"><img src = "img/python.png" width = "300" height = "auto"></div>
             </h1>
             <div class="card_container">
+                <div class = "card">
+                  <center><a href = "https://github.com/nope0124/CalculatorCanvas" target = "_blank"><img src="img/canvas.jpg" /></a></center>
+                  <h1>電卓キャンバス</h1>
+                  <p>描いた数式を自動で計算してくれます。現在+と-のみに対応しています。Herokuで公開しました→<a href = "https://calculatorcanvas.herokuapp.com/" target = "_blank">電卓キャンバス</a></p>
+                </div>
                 <div class="card">
                   <center><a href = "https://github.com/nope0124/ImageProcessing" target="_blank"><img src="img/mosaic.png"/></a></center>
                   <h1>Image Processing</h1>
@@ -139,11 +142,7 @@
                   <h1>Twitter Bot Classifier</h1>
                   <p>FF数やツイート数などのユーザー情報を元に、そのユーザーがどれだけBotに近いかを測定します。</p>
                 </div>
-                <div class = "card">
-                  <center><a href = "https://github.com/nope0124/CalculatorCanvas" target = "_blank"><img src="img/canvas.png" /></a></center>
-                  <h1>四則演算キャンバス</h1>
-                  <p>描いた数式を自動で計算してくれます。現在+と-のみに対応しています。サーバーを借りたら公開する予定です。</p>
-                </div>
+                
             </div>
           </section>
           <br/>

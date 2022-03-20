@@ -1,0 +1,179 @@
+@charset "UTF-8";
+#tab-nav, nav {
+    position: fixed;
+}
+
+#tab-nav, footer{
+    text-align:center;
+}
+
+nav {
+    width: 100%;
+}
+
+
+abbr,address,article,aside,audio,b,blockquote,body,body div,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-weight:400;vertical-align:baseline;background:0 0}
+
+body {
+    background: url("img/grain.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.bio img {
+    float:left;
+    margin-top:2%;
+    margin-right:2%;
+}
+#skills, footer, header {
+    background: #FFF;
+}
+
+#about, #link {
+    background:#FFF
+}
+
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+
+hr {
+    height: 3px;
+    background-color: #04bccc;
+    border: none;
+    color: #04bccc;
+}
+    
+
+ul {
+    list-style: none;
+}
+
+#tab-nav a, nav li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+
+main{
+    background-color: #FFF;
+    margin: 3%;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: solid 3px #04bccc;
+    border-radius:3vw;
+}
+
+.language{
+    padding: 2%;
+    border: solid 3px #04bccc;
+    border-radius:3vw;
+}
+
+
+footer {
+    color:#111;font-family:urwdin,sans-serif;padding:10px
+}
+
+#tab-nav a,nav li{font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-size:.8rem}
+
+nav{z-index:50;top:0;background:rgba(4,188,204,.5);-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+
+nav li{margin-right:16px}
+
+
+#about,#skills,#link{color:#111;width:100%;display:block}
+
+#about{font-family:Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;padding-bottom:5%}
+
+#skills{
+    padding-bottom: 10px;
+}
+
+/* body{
+    margin: 0;
+    overflow: hidden;
+} */
+
+.content-header{padding:8%;font-size:3em;font-family:Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;}
+
+.disc{
+    margin-top: 5%;
+    margin-left:10%;
+    margin-right:10%;
+    font-size:1rem;
+}
+
+.disc p{margin-bottom:3%;line-height:1.4}
+
+.disc h2{font-size:1.2rem}
+
+.disc ul{line-height:1.4}
+
+.disc .interest{font-size:.9rem;margin:10% -5% 0}
+
+.bio{
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.theme {
+    margin-top: 3%;
+    margin-left:3%;
+    margin-right:3%;
+    font-size:1rem;
+}
+
+.p-creations__container{
+    margin:3% 10%
+}
+.p-creations__container h1{
+    font-size:1.2rem;font-weight:700;margin-top:16px
+}
+.card_container{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));grid-template-rows:repeat(auto-fill,minmax(400px,1fr));gap:16px;grid-auto-rows:1fr;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;margin:16px
+}
+.card{
+    background:#fff;color:#111;overflow:auto;min-width:0;padding:1em;-webkit-box-shadow:0 0 16px 0 rgba(0,0,0,.6);box-shadow:0 0 16px 0 rgba(0,0,0,.6);position:relative;-webkit-transition:.5s ease;transition:.5s ease;z-index:0;border-radius:4px
+}
+
+.card:hover{
+    -webkit-transform:scale(1.08);
+    -ms-transform:scale(1.08);
+    transform:scale(1.08);z-index:10
+}
+
+.card img{
+    border-radius:10px;height:auto;width:auto;max-width:25vh;
+}
+
+.language h1 {
+    margin-bottom:2%;
+}
+
+.link img {
+    margin: 1%;
+}
+
+@media all and (min-width:512px){
+    nav{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        padding-top:1%
+    }
+}
+
+nav ul{
+    display:block;
+}
+nav li{
+    font-size:1.2rem;display:inline-block;
+}
